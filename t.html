@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="grid grid-cols-4 grid-rows-[auto,1fr,1fr,auto] gap-5 p-5 container mx-auto">
+    <header class="bg-aqua border-2 border-black  p-2 col-span-4">
+        <div class="navbar bg-base-100 shadow-sm">
+            <div class="flex-1">
+              <a class="inline-block bg-pink-500 text-white font-serif text-2xl px-6 py-3 rounded-full border-2 border-white shadow-md hover:bg-white hover:text-pink-500 hover:border-pink-500 transition duration-300 ease-in-out">
+                cosmetic .
+              </a>
+              
+              
+            </div>
+            <div class="flex-none">
+              <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle bg-pink-500">
+                  <div class="indicator">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /> </svg>
+                    <span class="badge badge-sm indicator-item">8</span>
+                  </div>
+                </div>
+                <div
+                  tabindex="0"
+                  class="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
+                  <div class="card-body">
+                    <span class="text-lg font-bold">8 Items</span>
+                    <span class="text-info">Subtotal: $999</span>
+                    <div class="card-actions">
+                      <button class="btn btn-primary btn-block">View cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                  <div class="w-10 rounded-full">
+                    <img
+                      alt="Tailwind CSS Navbar component"
+                      src="./assest/pic4.jpeg" />
+                  </div>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                  <li>
+                    <a class="justify-between">
+                      Profile
+                      <span class="badge">New</span>
+                    </a>
+                  </li>
+                  <li><a>Settings</a></li>
+                  <li><a>Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </header>
+    <nav class="bg-aqua border-2 border-black text-center p-2 col-span-1 row-span-2 ">
+        <ul class="flex flex-col space-y-4 justify-center  items-center md:h h-full">
+          <!-- <li><a href="#" class="border border-black rounded-lg  font-serif p-1 text-xl font-normal ">Cosmic shop....</a></li>
+          <li><a href="#" class="border border-black rounded-lg   font-serif p-1 text-xl font-normal">Shari Shop.....</a></li>
+            <li><a href="#" class="border border-black rounded-lg  font-serif p-1 text-xl font-normal">Our Best Product</a></li> -->
+            <li>
+              <a href="#">
+                <button
+                  type="button"
+                  class="mb-2 block w-full rounded-lg bg-gradient-to-r from-blue-500 to-pink-500 px-8 py-3 text-sm font-semibold uppercase leading-normal text-white shadow-lg transition duration-200 ease-in-out hover:from-pink-500 hover:to-blue-500 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-pink-400">
+                  Spacial Offer
+                </button>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#">
+                <button
+                  type="button"
+                  class="mb-2 block w-full rounded-lg bg-gradient-to-r from-blue-500 to-pink-500 px-8 py-3 text-sm font-semibold uppercase leading-normal text-white shadow-lg transition duration-200 ease-in-out hover:from-pink-500 hover:to-blue-500 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-pink-400">
+                  Spacial Offer
+                </button>
+              </a>
+            </li>
+            
+            
+            
+            <li>
+              <a href="#">
+                <button
+                  type="button"
+                  class="mb-2 block w-full rounded-lg bg-gradient-to-r from-blue-500 to-pink-500 px-8 py-3 text-sm font-semibold uppercase leading-normal text-white shadow-lg transition duration-200 ease-in-out hover:from-pink-500 hover:to-blue-500 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-pink-400">
+                  Spacial Offer
+                </button>
+              </a>
+            </li>
+            
+            
+            
+            
+           
+          
+        </ul>
+    </nav>
+    <main class="bg-aqua border-2 border-black text-center p-2 col-span-2 row-span-2 md:container mx-auto">
+   <!-- ?container -->
+<div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4 p-4">
+    <!-- card 1 -->
+    <div class="card bg-base-100  shadow-sm">
+        <figure>
+          <img class="w-full h-48 object-cover" 
+            src="./assest/pic1.jpg"
+            alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Combo Plate
+            <div class="badge badge-secondary">NEW</div>
+          </h2>
+          <p class="text-sm font-normal ">
+            6 beauty/health brands with good quality products to order from us</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Fashion</div>
+            <div class="badge badge-outline">Products</div>
+          </div>
+        </div>
+      </div>
+    <!-- card 2 -->
+    <div class="card bg-base-100  shadow-sm">
+        <figure>
+          <img class="w-full h-48 object-cover" 
+            src="./assest/pic2.jpeg"
+            alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Serum
+            <div class="badge badge-secondary">NEW</div>
+          </h2>
+          <p class="text-sm font-normal"> Serum brightens skin, reduces dark spots, and provides hydration for a natural glow</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Fashion</div>
+            <div class="badge badge-outline">Products</div>
+          </div>
+        </div>
+      </div>
+    <!-- card 3 -->
+    <div class="card bg-base-100    shadow-sm">
+        <figure>
+          <img class="w-full h-48 object-cover" 
+            src="./assest/pic3.jpeg"
+            alt="Shoes" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">
+            Foundation
+            <div class="badge badge-secondary">NEW</div>
+          </h2>
+          <p class="text-sm font-normal">Our Foundation offers smooth coverage, evens skin tone, and provides long-lasting wear for a flawless look.</p>
+          <div class="card-actions justify-end">
+            <div class="badge badge-outline">Fashion</div>
+            <div class="badge badge-outline">Products</div>
+          </div>
+        </div>
+      </div>
+</div>
+    </main>
+    <aside class="bg-aqua border-2 border-black text-center p-2 col-span-1 row-span-2">
+        <div>Sidebar content</div>
+    </aside>
+  
+    <footer class="bg-aqua border-2 border-black text-center p-2 col-span-4">
+      <footer class="footer sm:footer-horizontal bg-gradient-to-r from-pink-100 to-purple-200 text-gray-800 p-10">
+        <nav>
+          <h6 class="footer-title text-pink-600 text-lg font-bold">Services</h6>
+          <a class="link link-hover text-gray-700 text-base hover:text-pink-500">Branding</a>
+          <a class="link link-hover text-gray-700 text-base hover:text-pink-500">Design</a>
+          <a class="link link-hover text-gray-700 text-base hover:text-pink-500">Marketing</a>
+          <a class="link link-hover text-gray-700 text-base hover:text-pink-500">Advertisement</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title text-pink-600 text-lg font-bold">Company</h6>
+          <a class="link link-hover text-gray-700 text-base hover:text-pink-500">About us</a>
+          <a class="link link-hover text-gray-700 text-base hover:text-pink-500">Contact</a>
+          <a class="link link-hover text-gray-700 text-base hover:text-pink-500">Jobs</a>
+          <a class="link link-hover text-gray-700 text-base hover:text-pink-500">Press kit</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title text-pink-600 text-lg font-bold">Legal</h6>
+          <a class="link link-hover text-gray-700 text-base hover:text-pink-500">Terms of use</a>
+          <a class="link link-hover text-gray-700 text-base hover:text-pink-500">Privacy policy</a>
+          <a class="link link-hover text-gray-700 text-base hover:text-pink-500">Cookie policy</a>
+        </nav>
+      </footer>
+      
+      
+      
+    </footer>
+</body>
+</html>
